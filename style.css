@@ -7,8 +7,77 @@ body {
 }
 .image-generator {
     display: flex;
+    background: url("images/bg.jpg") no-repeat center center/cover;
+    justify-content: center;
+    background-size: cover;
+    align-items: center;
+    height:60vh;
+    position: relative;
+   background-position: center;
+}
+
+.image-generator::before {
+    content: '';
+    position: absolute;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.image-generator .content {
+        padding: 20px;
+        max-width: 768px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+.image-generator .content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.image-generator .content p {
+    font-size: 1.35rem;
+    margin-bottom: 10px;
+
+}
+.image-generator.generate-form {
+    display: flex;
     justify-content: center;
     align-items: center;
-    height:40vh;
-    background-color: #f1f1f1;
+    height: 100vh;
+    background: #f1f1f1;
 }
+.image-generator .content input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.image-generator .content button {
+    padding: 10px 20px;
+    background: #3498db;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.image-generator .content button:hover {
+    background: #2980b9;
+}
+.image-generator .content button:active {
+    background: #2980b9;
+}
+.image-generator .content button:focus {
+    outline: none;
+}
+.image-generator .content button:active {
+    transform: scale(0.98);
+}
+
