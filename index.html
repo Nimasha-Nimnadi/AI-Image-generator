@@ -1,33 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Image Generator Tool</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
     <section class="image-generator">
-        <div class="content">
-            <h1>AI Image Generator Tool</h1>
-            <p>Your Text-To-Image Agenet</p>
-            <p>Conver your text into image within a second using this JavaScript-powered AI tool.</p>
+      <div class="content">
+        <h1>AI Image Generator Tool</h1>
+        <p>Your Text-To-Image Agenet</p>
+        <p>
+          Conver your text into image within a second using this
+          JavaScript-powered AI tool.
+        </p>
 
-            <form action="#" class="generate-form" >
-                <input type="text" class="promt-input" placeholder="Describe the image you want to generate">
-                <div class="control">
-                    <select class="img-quantity">
-                        <option value="1">1 Image</option>
-                        <option value="2">2 Image</option>
-                        <option value="3">3 Image</option>
-                        <option value="4">4 Image</option>
-                    </select>
-                    <button type = "submit" class="generate-btn">Generate</button>
-                </div>
-            </form>               
-            
-        </div>
+        <form action="#" class="generate-form">
+          <input
+            type="text"
+            class="prompt-input"
+            placeholder="Describe the image you want to generate"
+            required
+          />
+          <div class="control">
+            <select class="img-quantity">
+              <option value="1">1 Image</option>
+              <option value="2">2 Image</option>
+              <option value="3">3 Image</option>
+              <option value="4">4 Image</option>
+            </select>
+            <button type="submit" class="generate-btn">Generate</button>
+          </div>
+        </form>
+      </div>
     </section>
-    
-</body>
+    <section class="img-gallery">
+      <div class="img-card">
+        <img src="images/img-1.jpg" alt="Generated Image1" />
+        <a href="#" class="dwn-btn">
+          <img src="images/download.svg" alt="download icon" />
+        </a>
+      </div>
+      <div class="img-card">
+        <img src="images/img-2.jpg" alt="Generated Image1" />
+        <a href="#" class="dwn-btn">
+          <img src="images/download.svg" alt="download icon" />
+        </a>
+      </div>
+      <div class="img-card">
+        <img src="images/img-3.jpg" alt="Generated Image1" />
+        <a href="#" class="dwn-btn">
+          <img src="images/download.svg" alt="download icon" />
+        </a>
+      </div>
+      <div class="img-card">
+        <img src="images/img-4.jpg" alt="Generated Image1" />
+        <a href="#" class="dwn-btn">
+          <img src="images/download.svg" alt="download icon" />
+        </a>
+      </div>
+    </section>
+  </body>
 </html>
